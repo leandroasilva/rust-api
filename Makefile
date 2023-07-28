@@ -19,3 +19,10 @@ install:
 #SQLX
 	cargo install sqlx-cli
 
+build:
+	cargo build
+
+run:
+	cargo run
+
+
