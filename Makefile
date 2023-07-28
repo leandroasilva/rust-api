@@ -1,3 +1,4 @@
+
 install:
     cargo install cargo-edit
 	cargo add actix-web
@@ -12,11 +13,6 @@ install:
 	cargo add jsonwebtoken
 	cargo add argon2
 	cargo add rand_core --features "std"
-
-#hotreload
-#	cargo install cargo-watch
-
-#SQLX
 	cargo install sqlx-cli
 
 build:
@@ -24,5 +20,3 @@ build:
 
 run:
 	cargo run
-
-
