@@ -5,6 +5,7 @@ use actix_web::{HttpServer, middleware::Logger, App, http::header};
 use sqlx::{Postgres, Pool, postgres::PgPoolOptions};
 use dotenv::dotenv;
 use routes::{ health_route::health_checker_handler };
+
 pub struct AppState {
     db: Pool<Postgres>,
 }
