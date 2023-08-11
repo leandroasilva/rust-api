@@ -26,7 +26,7 @@ fn main() {
     //DATABASE_URL
     let binding = std::env::var("DATABASE_URL").expect("DATABASE_URL not set");
     let DB_URL : &str = binding.as_str();
-    
+
 
     //set_database
     if let Err(e) = set_database(&DB_URL) {
@@ -193,6 +193,7 @@ fn set_database(DB_URL: &str) -> Result<(), PostgresError> {
     )?;
     Ok(())
 }
+
 //get_id function
 fn get_id(request: &str) -> &str {
     request
